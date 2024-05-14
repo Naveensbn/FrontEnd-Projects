@@ -1,0 +1,111 @@
+body{
+    font-family:Arial;
+    background-color:hsl(192, 83%, 86%);
+    /* color:rgb(231, 147, 147); */
+    color: hsl(0, 77%, 74%);
+
+    margin:0px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+}
+.weatherform{
+   margin:20px; 
+}
+.cityinput{
+    padding: 10px;
+    font-size:2rem;
+    font-weight:bold;
+    border: 2px solid rgb(246, 139, 139);
+    /* color:rgb(231, 147, 147); */
+    color:hsl(247, 83%, 70%); 
+
+    border-radius:20px;
+    margin: 10px;
+    width:350px;
+}
+
+button[type="submit"]{
+    padding: 10px 20px;
+    margin-left: 10px;
+     font-weight: bold;
+    font-size: 2rem;
+    background-color: hsl(247, 74%, 41%); 
+    color:rgb(240, 108, 108);
+    
+    border:none;
+    border-radius:10px;
+    cursor:pointer; 
+
+}
+button[type="submit"]:hover{
+    background-color:hsl(247, 74%, 30%); 
+}
+.card{
+    margin: 30px;
+    background: linear-gradient(180deg, hsl(203, 63%, 69%), hsl(122, 82%, 80%));
+    padding: 50px;
+    border-radius: 10px;
+
+    box-shadow: 2px 2px 10px hsla(0, 90%, 73%, 0.6);
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+h1{
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 2.5em;
+}
+p{
+    font-size: 1.5rem;
+    margin: 5px 0;
+}
+.CityDisplay,.TempDisplay{
+    font-size: 3.5rem;
+    font-weight: bold;
+    /* color: hsla(0, 0%, 0%, 0.8); */
+    color: hsl(0, 77%, 64%);
+
+    margin-bottom: 25px;
+}
+.HumidityDisplay{
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.Descdisplay{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.WeatherEmoji{
+    margin:0;
+    font-size: 7.5rem;
+
+}
+.ErrorDisplay{
+        font-size: 6em;
+        font-weight: bold;
+        color: hsla(0, 0%, 0%, 0.75);
+}
+#clock-container{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    /* height: 100vh; */
+}
+#clock{
+    font-family: monospace;
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+    /* color: hsl(0, 77%, 54%); */
+    color:hsl(247, 74%, 30%); 
+    
+    backdrop-filter: blur(5px);
+    background-color: hsla(0, 0%, 100%, 0.1);
+    width: 100%;
+    text-shadow: 3px 3px 4px hsl(0, 0%, 0%, 0.2);
+}
