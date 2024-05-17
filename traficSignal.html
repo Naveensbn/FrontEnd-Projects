@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    <style> 
+        #nl {
+          
+          background-color: gray;
+          border-right: dotted;
+          
+        }
+        #nr {
+          
+          background-color: gray;
+          
+        }
+        #el {
+          
+          background-color: gray;
+          
+        }
+        #er {
+          
+          background-color: gray;
+          border-top: dotted;
+        }
+        #wl {
+          
+          background-color: gray;
+          
+        }
+        #wr {
+          
+          background-color: gray;
+          border-bottom: dotted;
+        }
+        #sl {
+          
+          background-color: gray;
+          
+        }
+        #sr {
+          
+          background-color: gray;
+          border-right: dotted;
+        }
+        #wr1 {
+          
+          background-color: gray;
+          
+        }
+        #er1 {
+          
+          background-color: gray;
+          
+        }
+        #wl1 {
+          
+          background-color: gray;
+          
+        }
+        #el1 {
+          
+          background-color: gray;
+          
+        }
+        
+        </style>
+</head>
+<body>
+    <div class="container-fluid">
+    <div class="row" style="height: 200px;">
+        <div class="col-4  bg-dark"></div>
+        <div class=" col-2 " id="nl">
+            NL</div>
+        <div class="col-2 " id="nr">
+            NR</div>
+        <div class="col-4  bg-dark"></div>
+    </div>
+    <div class="row" style="height: 100px ;">
+        <div id="wr" class="col-4 ">
+            WR</div>
+            <div id="wr1" class="col-2 ">
+                <button type="submit"  class="btn btn-success" name="nl"  onclick="north()" >N</button></div>
+               
+        <div id="el" class="col-2 ">
+            <button type="submit"  class="btn btn-success" name="el"  onclick="east()">E</div>
+                <div id="el1" class="col-4 ">
+                    EL</div>
+                
+    </div>
+    <div class="row" style="height: 100px;">
+        <div id="wl"  class="col-4 ">Wl</div>
+        <div id="wl1"  class="col-2 ">
+            <button type="submit"  class="btn btn-success" name="wl" onclick="west()">W</button></div>
+                <div id="er1" class="col-2 ">
+                    <button type="submit"  class="btn btn-success" name="sl"  onclick="south()">S</button></div>
+        <div id="er" class="col-4 ">ER
+            </div>
+    </div>
+    <div class="row" style="height: 200px;">
+        <div class="col-4  bg-dark"></div>
+        <div id="sr" class="col-2 ">
+          SR</div>
+        <div id="sl" class="col-2 ">
+            SL</div>
+        <div class="col-4  bg-dark"></div>
+    </div>
+    <div class="row py-5"><button class="btn btn-primary" onclick="resetting()">RESET</button> </div>
+    <script>
+        function north(){
+           
+           document.getElementById("nr").style.backgroundColor="green";
+           document.getElementById("sl").style.backgroundColor="green";
+           document.getElementById("el").style.backgroundColor="green";
+           document.getElementById("wl").style.backgroundColor="green";
+           document.getElementById("er1").style.backgroundColor="green";
+           document.getElementById("wr1").style.backgroundColor="green";
+           document.getElementById("nl").style.backgroundColor="green";
+           document.getElementById("sr").style.backgroundColor="red";
+           document.getElementById("er").style.backgroundColor="red";
+           document.getElementById("wr").style.backgroundColor="green";
+           document.getElementById("wl1").style.backgroundColor="green";
+           document.getElementById("el1").style.backgroundColor="green";
+         }
+         function south(){
+           
+           document.getElementById("nr").style.backgroundColor="red";
+           document.getElementById("sl").style.backgroundColor="green";
+           document.getElementById("el").style.backgroundColor="green";
+           document.getElementById("wl").style.backgroundColor="green";
+           document.getElementById("er1").style.backgroundColor="green";
+           document.getElementById("wr1").style.backgroundColor="green";
+           document.getElementById("nl").style.backgroundColor="green";
+           document.getElementById("sr").style.backgroundColor="green";
+           document.getElementById("er").style.backgroundColor="green";
+           document.getElementById("wr").style.backgroundColor="red";
+           document.getElementById("wl1").style.backgroundColor="green";
+           document.getElementById("el1").style.backgroundColor="green";
+         }
+         function west(){
+           
+           document.getElementById("nr").style.backgroundColor="red";
+           document.getElementById("sl").style.backgroundColor="green";
+           document.getElementById("el").style.backgroundColor="green";
+           document.getElementById("wl").style.backgroundColor="green";
+           document.getElementById("er1").style.backgroundColor="green";
+           document.getElementById("wr1").style.backgroundColor="green";
+           document.getElementById("nl").style.backgroundColor="green";
+           document.getElementById("sr").style.backgroundColor="green";
+           document.getElementById("er").style.backgroundColor="red";
+           document.getElementById("wr").style.backgroundColor="green";
+           document.getElementById("wl1").style.backgroundColor="green";
+           document.getElementById("el1").style.backgroundColor="green";
+         }
+         function east(){
+           
+           document.getElementById("nr").style.backgroundColor="green";
+           document.getElementById("sl").style.backgroundColor="green";
+           document.getElementById("el").style.backgroundColor="green";
+           document.getElementById("wl").style.backgroundColor="green";
+           document.getElementById("er1").style.backgroundColor="green";
+           document.getElementById("wr1").style.backgroundColor="green";
+           document.getElementById("nl").style.backgroundColor="green";
+           document.getElementById("sr").style.backgroundColor="red";
+           document.getElementById("er").style.backgroundColor="green";
+           document.getElementById("wr").style.backgroundColor="red";
+           document.getElementById("wl1").style.backgroundColor="green";
+           document.getElementById("el1").style.backgroundColor="green";
+         }
+         function resetting(){
+           
+           document.getElementById("nr").style.backgroundColor="gray";
+           document.getElementById("sl").style.backgroundColor="gray";
+           document.getElementById("el").style.backgroundColor="gray";
+           document.getElementById("wl").style.backgroundColor="gray";
+           document.getElementById("er1").style.backgroundColor="gray";
+           document.getElementById("wr1").style.backgroundColor="gray";
+           document.getElementById("nl").style.backgroundColor="gray";
+           document.getElementById("sr").style.backgroundColor="gray";
+           document.getElementById("er").style.backgroundColor="gray";
+           document.getElementById("wr").style.backgroundColor="gray";
+           document.getElementById("wl1").style.backgroundColor="gray";
+           document.getElementById("el1").style.backgroundColor="gray";
+         }
+    </script>
+   
+</div>
+</body>
+</html>
