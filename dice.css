@@ -1,0 +1,28 @@
+body{
+font-family: Arial, Helvetica, sans-serif;
+text-align:center;
+font-size: 2em;
+font-weight: bold;
+}
+button{
+    background-color: red;
+    font-size: 100%;
+    color: white;
+    /* border: none; */
+    border-radius: 15px;
+    font-weight:bold;
+}
+#numofDice{
+    font-size: 1em;
+    width: 70px;
+    text-align: center;
+    background-color: rgb(67, 67, 241);
+    color: rgb(243, 221, 221);
+
+}
+#dicevalue{
+    margin:40px 40px 40px 0px ;
+}
+#diceimage img{
+    margin: 10px; 
+}
